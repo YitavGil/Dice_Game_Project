@@ -1,0 +1,9 @@
+.player-container{
+    border: 2px solid red;
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
