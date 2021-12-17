@@ -20,10 +20,10 @@ class Players extends Component {
     render(){
         return (
         <div className="player-container">
+            <h1 className="player">Player {this.state.playerId}</h1>
             {this.props.currTurn==this.state.playerId && <div className="dot"></div>}
-            <h1 className="player">Player {this.state.player}</h1>
-            <h3 className="curr-score">Current Score: {this.state.currScore}</h3>
-            <h1 className="total-score">{this.props.totalScore}</h1>
+            <h3 className="curr-score">Current Score: <br></br> {this.props.score}</h3>
+            <h1 className="total-score">Total: <br></br> {this.props.totalScore}</h1>
         </div>
         )
     }

@@ -1,9 +1,47 @@
 .player-container{
-    border: 2px solid red;
-    width: 10%;
+    width: 15vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-flow: column nowrap;
+    background: #f08080;
+    opacity: 0.9;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.curr-score{
+    width: 35%;
+    text-align: center;
+    background: #DC143C;
+    margin-top: 30rem;
+}
+
+.total-score{
+    text-align: center;
+    height: 6vh;
+}
+
+.dot{
+    width: 50px;
+    height: 50px;
+    border: 2px solid purple;
+    background: purple;
+    border-radius: 50%;
+    margin-top: 3rem;
+    position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    .player-container{
+        display: inline-block;
+        width: 20vw;
+        text-align: center;
+    }
+
+    .curr-score {
+        margin-left: 1rem;
+        width: 70%;
+        margin-top: 20rem;
+    }
 }
